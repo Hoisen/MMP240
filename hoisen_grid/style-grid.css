@@ -1,0 +1,120 @@
+/**
+ * The primary stylesheet for the CSS Grid Playground.
+ * This sheet pulls in surrounding components allowing you to focus on specifics.
+ */
+
+/* Components */
+@import url('CSS/reset.css');
+@import url('CSS/accessibility.css');
+@import url('CSS/layout.css');
+@import url('CSS/typography.css');
+@import url('CSS/masthead.css');
+@import url('CSS/boxes.css');
+
+/* CSS Grid Playground */
+
+@media screen and (min-width: 300px){
+	.the-grid{
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	grid-template-areas: 
+	"header"
+	"article"
+	"aside"
+	"section"
+	"footer"
+	"nihao"
+	"henhao"
+	"bucuo";
+}
+.blue{
+	margin-bottom: 10px;
+}
+.lineblue{
+	margin-top: 10px;
+}
+}
+
+@media screen and (min-width: 600px){
+	.the-grid{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-column-gap: 10px;
+	grid-template-areas: 
+	"header header header header"
+	"article aside aside aside"
+	"article section section section"
+	"footer footer footer footer"
+	"nihao nihao nihao nihao"
+	"henhao henhao henhao henhao"
+	"bucuo bucuo bucuo bucuo";
+
+}
+.blue{
+	margin-bottom: 10px;
+}
+.orange{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.slate{
+	margin-top: 10px;
+}
+}
+
+
+
+@media screen and (min-width: 900px){
+	.the-grid{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	grid-column-gap: 0;
+	grid-template-areas: 
+	"header header header"
+	"article aside section"
+	"footer nihao henhao"
+	"bucuo bucuo bucuo";
+}
+.orange{
+	margin: 0px;
+}
+.slate{
+	margin: 0px;
+}
+}
+
+
+
+.blue{
+	grid-area: header;
+}
+
+.purple{
+	grid-area: article;
+}
+
+.green{
+	grid-area: aside;
+}
+
+.yellow{
+	grid-area: section;
+}
+
+.orange{
+	grid-area: footer;
+}
+
+.red{
+	grid-area: nihao;
+}
+
+.slate{
+	grid-area: henhao;
+}
+
+.lineblue{
+	grid-area: bucuo;
+}
