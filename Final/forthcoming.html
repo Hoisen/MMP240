@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gallery & Museum</title>
+  
+  <style>
+
+  a {
+  color: #000000;
+  text-decoration: none;
+  font-family: 'Cormorant Unicase', serif;
+  font-size: 20px;
+}
+
+nav {
+  text-align: center;
+}
+
+
+a:hover{
+  text-decoration: underline;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li{
+  display: inline;
+}
+nav a{
+  display: inline-block;
+  padding: 20px;
+}
+nav a:hover{
+  background-color: white;
+  color: #13293D;
+  font-family: 'Cormorant Unicase', serif;;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align:center;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+
+}
+
+.sidenav a:hover{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  
+}
+@media screen and (min-width: 300px){
+
+
+  nav a{
+  display: inline-block;
+  padding: 12px;
+}
+}
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);}
+
+.text {
+  color: #000000;
+  font-size: 15px;
+  position: absolute;
+  bottom: -20px;
+  width: 50%;
+  text-align: center;
+  
+}
+
+.paragraph {
+  color: #000000;
+  font-size: 20px;
+  position: absolute;
+  margin-left: 610px;
+  margin-top: -350px;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+  </style>
+
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="museum.html">Museum</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="events.html">Events</a></li>
+    <li><a href="about.html">About</a></li>
+
+  </ul>
+</nav>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="current.html">Current</a>
+  <a href="forthcoming.html">Forthcoming</a>
+  <a href="past.html">Past</a>
+  <a href="viewall.html">View all</a>
+</div>
+
+<span style="font-size:18px;cursor:pointer; margin-left: 540px;" onclick="openNav()">&#9776; Exhibitions: Forthcoming</span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="images/klimt.jpg" style="width:50%; margin-top: 100px;">
+  <div class="text"><a href="themet.html">Gustav Klimt</div>
+  <div class="paragraph"><h2 style="text-align: center; margin-top: 150px;">The Metropolitan Museum of Art</h2>Scofield Thayer Collection<br>1000 Fifth Avenue New York</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="images/mary.jpg" style="width:60%">
+  <div class="text"><a href="whitneymuseum.html">Mary Corse</div>
+  <div class="paragraph"><h2 style="text-align: center; margin-left: 100px;">Whitney Museum</h2><p style="margin-left: 100px;">A Survey in Light</p><br><p style="margin-left: 100px; margin-top: -45px;">99 Gansevoort Street New York<h3 style="margin-left: 100px;">Jun 8-Nov 25, 2018</h3></p></div>
+
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="images/theelusive.jpg" style="width:50%">
+  <div class="text"><a href="hauserwirth.html">Marcel Mari&eumln</div>
+  <div class="paragraph"><h2 style="text-align: center; margin-left: 40px;">Hauser & Wirth</h2><p style="margin-left: 40px;">A Luta Continua.<br>The Sylvio Perlstein Collection</p><br><p style="margin-left: 40px; margin-top: -45px;">548 West 22nd Street New York</p></div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+
+</body>
+</html>

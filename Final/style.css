@@ -1,0 +1,312 @@
+body{
+		background-color: #ffffff;
+		font-family: Arial, Hevetica, sans-serif;
+		text-align: center;
+		color: white;
+	}
+
+	a {
+	color: #000000;
+	text-decoration: none;
+	font-family: 'Cormorant Unicase', serif;
+	font-size: 20px;
+}
+
+nav {
+	text-align: center;
+}
+
+
+a:hover{
+	text-decoration: underline;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li{
+	display: inline;
+}
+nav a{
+	display: inline-block;
+	padding: 20px;
+}
+nav a:hover{
+	background-color: white;
+	color: #13293D;
+	font-family: 'Cormorant Unicase', serif;;
+}
+
+
+@media screen and (min-width: 300px){
+
+
+	nav a{
+	display: inline-block;
+	padding: 12px;
+}
+}
+/*.manhattanmap {
+	position: relative;
+
+}
+
+.map {
+	position: relative;
+	margin-top: 20px;
+	height: auto;
+	
+}
+
+.themet {
+	position: absolute;
+	top: 240px;
+	left: 30px;
+
+
+	}*/
+
+.container {
+    position: relative;
+	margin-top: 25px;
+}
+
+.themet {
+    position: absolute;
+    left: 47.5%;
+    top: 23.3%;
+    width: 5%;
+    text-align: center;
+    font-size: 15px;
+}
+
+.whitney {
+	 position: absolute;
+    left: 41.2%;
+    top: 63%;
+    width: 5%;
+    text-align: center;
+    font-size: 15px;
+    
+}
+
+.guggenheim {
+	 position: absolute;
+    left: 47.5%;
+    top: 18.7%;
+    width: 5%;
+    text-align: center;
+    font-size: 15px;
+    
+}
+
+.naturalhistory {
+	position: absolute;
+    left: 42.5%;
+    top: 23.8%;
+    width: 5%;
+    text-align: center;
+    font-size: 15px;
+}
+
+.davidzwirner {
+	position: absolute;
+    left: 40.5%;
+    top: 60.8%;
+    width: 5%;
+    text-align: center;
+    font-size: 15px;
+}
+
+.diaart {
+	position: absolute;
+    left: 41%;
+    top: 58%;
+    width: 5%;
+    text-align: center;
+    font-size: 15px;
+}
+
+.hauserwirth {
+	position: absolute;
+    left: 39.5%;
+    top: 59%;
+    width: 5%;
+    text-align: center;
+    font-size: 15px;
+}
+
+.pace {
+	position: absolute;
+    left: 40%;
+    top: 57%;
+    width: 5%;
+    text-align: center;
+    font-size: 15px;
+}
+
+.museumpoint {
+	position: absolute;
+    left: 13%;
+    top: 80%;
+    width: 5%;
+    text-align: center;
+    font-size: 10px;
+
+}
+
+.gallerypoint {
+	position: absolute;
+    left: 20%;
+    top: 80%;
+    width: 5%;
+    text-align: center;
+    font-size: 10px;
+
+}
+
+.tooltip {
+    position: relative;
+   
+
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+img { 
+    width: 25%;
+    height: 80%;
+
+}
+
+
+
+
+.metmuseum {
+	position: absolute;
+	width: 100%;
+  max-width: 450px;
+  margin-left: 100px;
+  margin-top: 10px;
+
+}
+
+.naturalmuseum {
+	position: absolute;
+	width: 100%;
+	max-width: 490px;
+	margin-right: 100px;
+	left: 600px;
+	margin-top: 10px;
+   }
+
+.guggenheimmuseum{
+	position: absolute;
+	width: 100%;
+    max-width: 450px;
+    margin-left: 100px;
+    margin-top: 300px;
+}
+
+.whitneymuseum {
+	position: absolute;
+	width: 100%;
+	max-width: 450px;
+	margin-right: 100px;
+	left: 623px;
+	margin-top: 300px;
+   }
+
+.diagallery {
+	position: absolute;
+	width: 100%;
+ 	max-width: 450px;
+  	margin-left: 100px;
+  	margin-top: 10px;
+
+}
+
+.hauserwirthgallery {
+	position: absolute;
+	width: 100%;
+	max-width: 490px;
+	margin-right: 100px;
+	left: 625px;
+	margin-top: 10px;
+}
+
+.davidzwirnergallery{
+	position: absolute;
+	width: 100%;
+    max-width: 450px;
+    margin-left: 100px;
+    margin-top: 340px;
+}
+
+.pacegallery {
+	position: absolute;
+	width: 100%;
+	max-width: 490px;
+	margin-right: 100px;
+	left: 623px;
+	margin-top: 340px;
+}
+
+
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 17px;
+  padding: 20px;
+  text-align: center;
+}
+
+.museumpage:hover .overlay {
+  opacity: 1;
+}
+
+
+
+
