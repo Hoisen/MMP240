@@ -74,6 +74,14 @@ nav a:hover{
 	margin-top: 25px;
 }
 
+.office {
+    position: absolute;
+    left: 47.5%;
+    top: 23.3%;
+    width: 5%;
+    text-align: center;
+    font-size: 15px;
+}
 .themet {
     position: absolute;
     left: 47.5%;
@@ -307,6 +315,16 @@ img {
   opacity: 1;
 }
 
+.text {
+    color: black;
+    text-align: center;
+    font-family: 'Cormorant Unicase', serif;
+    font-size: 18px;
 
+}
+
+@media only screen and (min-width: 800px){
+
+}
 
 
